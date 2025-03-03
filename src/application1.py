@@ -7,8 +7,8 @@ def testGreaterThan10(x):
 
 
 def getSquared(numbers):
-    # if not isinstance(numbers, list):
-    #     raise ValueError('Only accepts a list!')
+    if not isinstance(numbers, list):
+        raise ValueError('Only accepts a list!')
     return [getExponential(x, 2) for x in numbers]
 
 
