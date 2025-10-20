@@ -26,12 +26,12 @@ class TestSuite(unittest.TestCase):
         actualValue = tasks.getSquared(list)
         self.assertListEqual(actualValue, expectedValue)
 
-        # with self.subTest(key='input type'):
-        #     with self.assertRaises(ValueError):
-        #         tasks.getSquared(2)
+        with self.subTest(key='input type'):
+            with self.assertRaises(ValueError):
+                tasks.getSquared(2)
 
-        #     with self.assertRaises(ValueError):
-        #         tasks.getSquared({'key': 2})
+            with self.assertRaises(ValueError):
+                tasks.getSquared({'key': 2})
 
 if __name__ == '__main__':
     unittest.main()
