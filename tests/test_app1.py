@@ -20,6 +20,11 @@ class TestSuite(unittest.TestCase):
             actualValue = tasks.testGreaterThan10(10)
             self.assertIsNone(actualValue)
 
+        for i in [2, 4, 6, 8, 10]:
+            with self.subTest(key=f"Testing with {i}"):
+                actualValue = tasks.testGreaterThan10(i)
+                self.assertFalse(actualValue)
+
     def test_squared(self):
         list = [1, 2, 3, 4]
         expectedValue = [1, 4, 9, 16]
