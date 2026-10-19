@@ -11,7 +11,7 @@ def getSquared(numbers):
         raise ValueError('Only accepts a list!')
     return [getExponential(x, 2) for x in numbers]
 
-
+# These lines are not covered
 if __name__ == '__main__':
     print(getSquared([1, 2, 3]))
     print(testGreaterThan10(5))
