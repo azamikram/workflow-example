@@ -8,7 +8,7 @@ class Student:
         if self.gpa > 3.0:
             return "Congrats on your graduation"
         else:
-            return "Cannot graduate this semester, GAP is below 3.0"
+            return "Cannot graduate this semester"
 
     def writeSomething(self):
         with open('hello.txt', 'a+') as f:
